@@ -13,9 +13,9 @@ class GroupScore:
     def __init__(self):
         self.dataSet = 'Yelp'
         if self.dataSet == 'Amazon':
-            self.con = sqlite3.connect('G:\\DB\\Books_data13.db')
+            self.con = sqlite3.connect('../dataset/DB/Books_data13.db')
         else:
-            self.con = sqlite3.connect('G:\\DB\\YelpZip.db')
+            self.con = sqlite3.connect('../dataset/DB/YelpZip.db')
         self.cursor = self.con.cursor()
         self.community_GER = []
         self.community_RD = []

@@ -28,7 +28,7 @@ def find_str(str):
 
 
 # 全局变量
-con = sqlite3.connect('G:\\DB\\Books_data13.db')
+con = sqlite3.connect('../dataset/DB/Books_data13.db')
 cursor = con.cursor()
 file_w = open(fw, 'w', encoding='utf-8')
 file = open(fr, 'r', encoding='utf-8')

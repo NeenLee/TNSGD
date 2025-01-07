@@ -13,7 +13,7 @@
 #     ratio=sum/(i+1)
 #     print(ratio)
 #     fw.write(str(ratio)+'\n')
-fr=open('../output/spammer_group_排序_0.7.txt', 'r')
+fr=open('../output/spammer groups_0.7.txt', 'r')
 label = []
 for line in fr:
     line = line.strip()
@@ -23,7 +23,7 @@ print(label)
 sum = sum(label)
 count = 0
 break_count = 0
-fw=open('../output/spammer_group_排序_0.7_recall.txt', 'w')
+fw=open('../output/spammer groups_0.7_recall.txt', 'w')
 for i in range(0, label.__len__()):
     count = count + label[i]
     ratio = count / sum

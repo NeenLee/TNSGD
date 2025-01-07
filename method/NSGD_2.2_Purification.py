@@ -4,7 +4,7 @@ import time
 #群组净化+打标签#
 #还没写完//2022/4/7
 start_time = time.time()
-con = sqlite3.connect('G:\\DB\\Books_data13.db')
+con = sqlite3.connect('../dataset/DB/Books_data13.db')
 cursor = con.cursor()
 fr = open('../output/candidate groups merge norepeat.txt', 'r')
 fw = open('../output/final groups.txt','w')

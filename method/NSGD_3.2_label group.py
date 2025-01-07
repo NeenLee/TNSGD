@@ -1,10 +1,10 @@
 import sqlite3
 import datetime
 #打标签
-con = sqlite3.connect('E:\\DB\\Books_data13.db')
+con = sqlite3.connect('./dataset/DB/Books_data13.db')
 cursor = con.cursor()
-fr = open('../output/spammer_group_排序.txt', 'r')
-fw = open('../output/spammer_group_排序_0.7.txt','w')
+fr = open('../output/spammer groups.txt', 'r')
+fw = open('../output/spammer groups_0.7.txt','w')
 purity = 0.7
 count_num_line = 0
 while 1:
